@@ -1,15 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- Set character encoding for the document -->
+    <meta charset="utf-8" />
+    <!-- Viewport for responsive web design -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Webové stránka kavárny v pražském hloubětíně upřednostňující tradiční pojetí kavárenství."
+    />
+    <!-- Document Title -->
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Apple Web App Meta -->
+    <link rel="apple-touch-icon" href="/img/favicon_appl-touch.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="icon" type="image/png" href="/img/favicon_32-32.png" />
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>
+        Omlouváme se, ale <%= htmlWebpackPlugin.options.title %> nefunguje
+        správně bez povoleného JavaScriptu.
+      </strong>
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
